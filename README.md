@@ -1,14 +1,14 @@
 # Triangle Packer
-trianglepacker.h is a C/C++ single-file library that packs triangles from a 3D mesh into a 2D map with the specified size, border and spacing between the triangles.
+trianglepacker.h is a C/C++ single-file library that packs triangles from a 3D mesh into a 2D map with some specified map size, border and spacing between triangles.
 It uses a fast greedy algorithm.
 The output is not optimal!
 
 I implemented this to see how it performs in a light mapping context.
-Unfortunately, there are often visible seams between adjacent triangles.
+Unfortunately, there were often visible seams between adjacent triangles.
 Neighbours in the mesh are located in completely different places in the map and thus are not interpolated correctly.
-Even slight differences of their edge intensities are very noticeable.
+Even slight differences of their edge intensities were very noticeable.
 Another disadvantage is, that all mesh vertices will be unique and can not be reused.
-I can imagine other use cases for this code. Please tell me yours ;).
+I can imagine other use cases for this code, but please tell me yours too ;).
 
 To paste the implementation into your project, insert the following lines:
 ```
