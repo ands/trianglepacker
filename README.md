@@ -19,7 +19,7 @@ To paste the implementation into your project, insert the following lines:
 ![Triangle Packer Example Output](https://github.com/ands/trianglepacker/raw/master/example_images/city_packed_border_0_spacing_2.png)
 
 # Example usage
-This example fits triangles into a specified map resolution
+The following example packs all triangles into a specified map resolution and returns the determined 3D->2D scaling factor.
 ```
 float scale3Dto2D;
 if (!tpPackIntoRect(
